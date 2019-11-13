@@ -14,9 +14,8 @@ class Login extends Component {
             errorEmail: "",
             errorPassword: "",
         };
-
-        this.props.history.go(this.props.history.length-1);
-        const token = GetUserToken();
+        
+         const token = GetUserToken();
         if (token) {
             this.props.history.push('/')
         }
